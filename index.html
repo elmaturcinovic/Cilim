@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćilim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="CSS/styleIndex.css">
+
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav"></div>
+
+            <div class="col-sm-8 main">
+                <div class="col-sm-12 slika">
+                    <img id="logo" src="Images/Logo.png" alt="ćilim">
+                </div>
+            </div>
+
+            <div class="col-sm-2 sidenav"></div>
+        </div>
+
+        <div class="row content">
+            <div class="col-sm-2 sidenav"></div>
+            <div class="col-sm-8 main">
+                <div>
+                    <ul id="meni">
+
+                        <!--Nova igra-->
+                        <li>
+                            <a class="meniNav" data-toggle="collapse" href="#NovaIgra" role="button" aria-expanded="false" aria-controls="collapseExample">Nova igra</a>
+                            <div class="collapse" id="NovaIgra">
+                                <div class="card card-body">
+                                    <form id="opcije" action="cilim.html" method="get">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="igrac1">Igrač 1:</label>
+                                                <input type="text" class="form-control" id="igrac1" name="igrac1" placeholder="Unesi ime">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="igrac2">Igrač 2:</label>
+                                                <input type="text" class="form-control" id="igrac2" name="igrac2" placeholder="Unesi ime">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Veličina table:</label>
+                                                <br>
+                                                <input type="radio" id="mala" name="velicina" value="7">
+                                                <label for="mala">Manja (dimenzija 7)</label><br>
+                                                <input type="radio" id="srednja" name="velicina" value="9">
+                                                <label for="srednja">Srednja (dimenzija 9)</label><br>
+                                                <input type="radio" id="velika" name="velicina" value="11">
+                                                <label for="velika">Velika (dimenzija 11)</label>
+                                            </div>
+                                            <button type="submit" id="formaDugme" class="btn btn-light" value="Submit">Započni igru!</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Uputstvo -->
+                        <li>
+                            <a class="meniNav" data-toggle="collapse" href="#Upute" role="button" aria-expanded="false" aria-controls="collapseExample">Upute</a>
+                            <div class="collapse" id="Upute">
+                                <div class="card card-body">
+                                    <div class="col-sm-6">
+                                        <p>Tabla za igru se sastoji od kvadratića poredanih u obliku kao na slici.Dva igrača igraju naizmjenično.<br>
+                                            Svaki igrač u svom potezu bira jednu neoznačenu stranu jednog kvadratića na tabli (ivice sive boje).
+                                            Ukoliko jedan od igrača označi posljednju neoznačenu (sivu) stranu kvadratića,
+                                            zatvara kvadratić i označava ga svojim poljem.
+                                            Ovo se može desiti samo ukoliko su tri strane već bile označene, te korisnik izabere
+                                            preostalu stranu. Igrač bira novu neoznačenu stranu, sve dok zatvara kvadratiće.<br>
+                                            Kada korisnik izabere stranu kvadratića, tako da ne zatvori kvadratić, drugi igrač preuzima potez.
+                                            Igra se nastavlja, sve do momenta kada posljednje polje ne bude označeno.
+                                            Pobijedio je igrač koji zatvori više kvadratića.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img id="tabla" src="Images/tabla.png" alt="Tabla">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- O Projektu -->
+                        <li>
+                            <a class="meniNav" data-toggle="collapse" href="#oProjektu" role="button" aria-expanded="false" aria-controls="collapseExample">O projektu</a>
+                            <div class="collapse" id="oProjektu">
+                                <div class="card card-body">
+                                    <div class="col-sm-6">
+                                        <h4 class="Naslov">Predmet:</h4>
+                                        <p>Naziv predmeta: Web programiranje</p>
+                                        <p>Profesor: prof.dr. Elmedin Selmanović</p>
+                                        <p>Asistent: Sead Delalić</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4 class="Naslov">Studij:</h4>
+                                        <p>Smjer: Teorijska kompjuterska nauka</p>
+                                        <p>Odsjek: Odsjek za matematiku</p>
+                                        <p>Fakultet: Prirodno-matematički fakultet </p>
+                                    </div>
+                                    <div class="col-sm-12" id="oAutoru">
+                                        <hr>
+                                        <h4 class="Naslov">O autoru:</h4>
+                                        <p>Ime i prezime: Elma Turčinović</p>
+                                        <p>Kontakt:</p>
+                                        <p> <i class="fa fa-linkedin-square"></i> &nbsp; LinkedIn: <a href="https://www.linkedin.com/in/elma-tur%C4%8Dinovi%C4%87-ba8164157/">linkedin.com/in/elma-turčinović- ba8164157/</a></p>
+                                        <p> <i class="fa fa-facebook"> </i> &nbsp; Facebook: <a href="https://www.facebook.com/elma.turcinovic/">facebook.com/elma.turcinovic/</a></p>
+                                        <p> <i class="fa fa-instagram"></i> &nbsp; Instagram: <a href="https://www.instagram.com/elmaturcinovic/">instagram.com/elmaturcinovic/</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    background-image: url("../Images/background.png");
+    background-size: auto;
+    background-repeat: repeat;
+}
+#logo{
+    margin-top: 15px ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 30px;
+}
+#meni{
+    border-radius: 15px;
+}
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 80%;
+    background-color: #2e2524;
+}
+li .meniNav{
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+li .meniNav:active, li .meniNav:hover{
+    background-color: #db593e;
+    color: white;
+    text-decoration: none;
+}
+li .meniNav:visited, .meniNav:link{
+    color: white;
+    text-decoration: none;
+}
+li div {
+    overflow: auto;
+    padding: 10px;
+    background-color: #2e2524;
+}
+.collapse {
+    color: white;
+}
+.col-sm-6{
+    text-align: left;
+}
+#oAutoru{
+    text-align: left;
+}
+#oAutoru a:link, a:visited, a:active{
+    color: white;
+}
+#oAutoru a:hover {
+    color: #db593e;
+}
+.btn.btn-light{
+    background-color: #db593e;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.Naslov{
+    font-weight: bold;
+}
+#tabla{
+    width: 100%;
+}

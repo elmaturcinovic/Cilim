@@ -1,0 +1,69 @@
+body {
+    background-image: url("../Images/background.png");
+    background-size: auto;
+    background-repeat: repeat;
+}
+#logo{
+    width: 75%;
+    margin-top: 30px ;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 10px;
+}
+#igraci{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: center;
+    background-color: #2e2524;
+    color: white;
+    border-radius: 15px;
+    width: 80%;
+}
+
+#igraci{
+    padding-top: 20px;
+}
+
+#igrac1, #igrac2, #rez, #rezultat, #pobjednik{
+    font-weight: bold;
+}
+#igrac1{
+    color: #db593e;
+}
+#igrac2{
+    color: #608c50;
+}
+#i1, #i2{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    border-radius: 10px;
+}
+#tabla{
+    padding-top: 30px;
+}
+#cilim {
+    border: solid white 5px;
+    background-color: rgb(250,250,250);
+}
+#r{
+    padding: 10px;
+}
+#kraj{
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn.btn-light{
+    background-color: #db593e;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#dugmad{
+    padding: 10px;
+}

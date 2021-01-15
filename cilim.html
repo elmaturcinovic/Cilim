@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćilim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/styleCilim.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <!--Dio rezervisan za tablu za igranje-->
+            <div class="col-sm-7" id="tabla">
+                <canvas id="cilim" width="550px" height="550px"></canvas>
+            </div>
+            <!--Dio rezervisan za logo, imena igraca i rezultat-->
+            <div class="col-sm-5 podaciOIgri">
+                <img id="logo" src="Images/Logo.png" alt="logo">
+                <div id="igraci">
+                    <div id="i1">
+                        <h4 id="igrac1">Igrač 1:</h4>
+                    </div>
+                    <hr>
+                    <div id="i2">
+                        <h4 id="igrac2">Igrač 2:</h4>
+                    </div>
+                    <hr>
+                    <div id="r">
+                        <h4 id="rez">Rezultat:</h4>
+                        <h3 id="rezultat">- : -</h3>
+                    </div>
+                    <div id="kraj">
+                        <h3 id="pobjednik"></h3>
+                        <div id="dugmad">
+                            <button type="button" class="btn btn-light" id="pocetak" onclick="povratakNaPocetak();">Povratak na početak</button>
+                            <button type="button" class="btn btn-light" id="revans" onclick="revans();">Revanš</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="JS/logika.js"></script>
+    <script type="text/javascript" src="JS/igra.js"></script>
+
+
+</body>
+</html>
